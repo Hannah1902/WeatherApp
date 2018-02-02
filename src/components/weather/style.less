@@ -1,0 +1,167 @@
+@import '~style/helpers';
+
+//Gives the container a size
+.container {
+	flex-direction: column;
+	width: 414px;
+	height: 650px;
+    background-color: #5377ce;
+    font-family: 'Open Sans', sans-serif;
+}
+
+//Grey horizontal bar at top of screen
+.top{
+    width: 414px;
+    height: 50px;
+    background-color: #CCD4E1;
+    display: flex;
+    color: #000;
+}
+//Gear Icon
+.gear {
+    width:28px;
+    height:28px;
+    margin: 10px 0 0 10px;
+}
+
+//Styles size of image of dots then the dot group
+.dot{
+    width:12px;
+    height:12px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dots{
+    margin: auto;
+}
+
+
+
+//Sizes the body between the two horizontal bars
+.main{
+    height: 666px;
+    width: 414px;
+    padding: 0;
+}
+
+//Contains the city, date, and temp
+.head{
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    width: 80%;
+    display: flex;
+}
+
+//Current location
+.city {
+	flex: 1;
+	font-size: 36px;
+    color: #fff;
+	font-weight: 400;
+}
+//Date
+.date, .text{
+    font-size: 18px;
+    color: #fff;
+}
+//Current Temperature
+.temperature {
+    margin: 10px 0 10px 60px;
+    font-size: 42px;
+    color: #e9e74c;
+}
+
+//Contains the current weather image and condition
+.center{
+    padding: 0.5em 0 2.5em 0;
+    display: table;
+    margin: auto;
+}
+//Current Weather Image
+.weatherimg {
+    width: 35%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+//Current Weather Condition
+.condition{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+//Contains the Precipication and Humidity information
+.info{
+    display:table;
+    margin: auto;
+    text-align: center;
+}
+//Precipitation Label
+.label1{
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px; 
+}
+//Humidity Label
+.label2{
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+//Precipitation and Humidity Levels
+.precip, .humid{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+//Contains all hourly weather information
+.hourly{
+    margin-top: 30px;
+    margin-left: 18px;
+    width: 414px;
+    height: 45px;
+    display: flex;
+}
+//Groups the small weather image and temp together
+.hour{
+    display:flex;
+    margin: auto;
+    text-align: center;
+}
+//Decorative horizontal grey bar
+.line{
+    width: 414px;
+    height: 7px;
+    background-color: #CCD4E1;
+    color: #000;
+    margin-bottom:10px;
+}
+//Time data
+.hours{
+    width: 414px;
+    height: auto;
+    display: flex;
+}
+//Style for the temperatures and hours
+.conditions {
+    color: #fff;
+	font-size: 1em;
+}
+//Styles the small image
+.smallimg{
+    width: 35%;
+    height: 35%;
+    margin-right: 5px;
+}
+//Styles the footer of the page
+.foot{
+    position:fixed;
+    top:610px;
+    left:0;
+    width:414px;
+    height:40px;
+    background-color: #CCD4E1;
+}

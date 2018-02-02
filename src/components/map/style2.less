@@ -1,0 +1,122 @@
+@import '~style/helpers';
+
+//Gives the container a size
+.container {
+	flex-direction: column;
+	width: 414px;
+	height: 623px;
+    background-color: #5377ce;
+    font-family: 'Open Sans', sans-serif;
+}
+
+//Grey horizontal bar at top of screen
+.top{
+    width: 414px;
+    height: 50px;
+    background-color: #CCD4E1;
+    display: flex;
+    color: #000;
+    align-items: center;
+    z-index: 975;
+}
+//Gear Icon
+.gear {
+    width:28px;
+    height:28px;
+    margin: 0 0 0 10px;
+    z-index: 900;
+}
+//Styles button for returning to first screen
+.button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+//Sizes the body between the two horizontal bars
+.main{
+    width: 414px;
+    height: 500px;
+    color: #fff;
+}
+
+//Positions the lists next to each other
+.lists{
+    display: flex;
+    overflow: scroll;
+}
+
+//Positions map image
+.map{
+    width: 90%;
+    height: 200px;
+    margin: 1.5em 1.5em 0 1.5em;
+}
+//Contains table with list information
+.recs{
+    float: left;
+    width: 80%;
+    height: 325px;
+    margin-bottom: 20px;
+    z-index: 950;
+    -webkit-padding-start: 25px;
+}
+//Hides the scrollbar of recs table
+::-webkit-scrollbar{
+    display:none;
+}
+//Styles each item in the list
+.recs li{
+    color: #CCD4E1;
+    height: 28px;
+    overflow-x:hidden;
+    background-color:#4a6bb9;
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #CCD4E1;
+}
+//Changes the hover and active colors of list item
+.recs li:hover, .active{
+    background-color: #7595BE;
+}
+
+//Contains table with list information
+.recs2{
+    width: 15%;
+    float: right;
+    height: 325px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    z-index: 950;
+    -webkit-padding-start: 0;
+}
+//Styles each item in the list
+.recs2 li{
+    color: #CCD4E1;
+    height: 28px;
+    background-color:#4a6bb9;
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #CCD4E1;
+}
+//Changes the hover and active colors of list item
+.recs2 li:hover, .active{
+    background-color: #7595BE;
+}
+
+
+
+//Styles the footer of the page
+.foot{
+    position:fixed;
+    top:610px;
+    left:0;
+    width:414px;
+    height:40px;
+    background-color: #CCD4E1;
+}
